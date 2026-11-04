@@ -135,11 +135,22 @@ Names are 1–15 Latin letters, digits, `_` or `-`.
 No game files. You need your own copy of Need for Speed: Most Wanted (2012).
 Memory dumps of the game are not published either: they contain the game's code.
 
+## Security and compatibility warnings
+
+- **Legacy transport security:** The original game uses SSLv3, an obsolete and insecure protocol. This project uses it for compatibility only. Do not treat these connections as secure or expose sensitive credentials through them.
+- **Client certificate verification:** The optional client patch skips the game's server certificate check to allow a self-signed server certificate. This removes an important authenticity check. Only connect to servers you trust, preferably over a private LAN or VPN.
+- **Executable modification:** The patcher changes executable bytes in a locally owned copy of `NFS13.exe`. It is version-specific, unsupported by EA, and may trigger security software or violate applicable terms. Review the patch and understand the risks before using it.
+- **No official account required for this private server:** The patched login path is not an official EA authentication service. Do not enter EA account passwords or other sensitive credentials into community-hosted services.
+- **No security guarantee:** Run the server in an isolated environment, keep access limited to trusted users, and do not expose unnecessary ports to the public internet.
+
 ## Legal
 
-This is an unofficial fan project for preservation and private play. It is not
-affiliated with or endorsed by Electronic Arts or Criterion Games. *Need for
-Speed* and *Most Wanted* are trademarks of Electronic Arts Inc.
-Our own code is licensed under the [GNU Affero General Public License v3.0](LICENSE).
+This is an independent, unofficial, non-commercial fan preservation and interoperability project. It is **not affiliated with, authorized by, sponsored by, or endorsed by Electronic Arts or Criterion Games**. *Need for Speed* and *Most Wanted* are trademarks of Electronic Arts Inc.
+
+**You must obtain and use your own lawfully acquired copy of Need for Speed: Most Wanted (2012).** No game executable, proprietary game assets, or EA source code are distributed in this repository. The client patcher only operates on a user's existing executable.
+
+Reverse engineering, modifying executables, and bypassing authentication or technical protection mechanisms may be restricted by copyright law, anti-circumvention rules, and the game's terms of service. Laws vary by jurisdiction. This project makes **no claim that every use is legally permitted**; users are responsible for checking applicable law and agreements. This notice does not grant any rights to EA's intellectual property.
+
+Our original project code is licensed under the [GNU Affero General Public License v3.0](LICENSE).
 
 Copyright (C) 2026 sn0wd0wn (gregel, Dantiox, Alexes).
