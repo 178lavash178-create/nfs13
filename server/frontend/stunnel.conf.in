@@ -1,0 +1,31 @@
+; SSLv3 frontend for the NFS13 client (DirtySock speaks SSLv3 only).
+foreground = yes
+pid =
+debug = info
+
+[blaze]
+accept = 0.0.0.0:42127
+connect = 127.0.0.1:42128
+cert = @DEST@/certs/cert.pem
+key = @DEST@/certs/key.pem
+sslVersionMin = SSLv3
+sslVersionMax = SSLv3
+ciphers = ALL:COMPLEMENTOFALL:@SECLEVEL=0
+securityLevel = 0
+options = -NO_SSLv3
+verifyChain = no
+; The Python backend trusts only loopback and consumes HAProxy PROXY v1.
+; This preserves each player's LAN IP through TLS for stable persona IDs.
+protocol = proxy
+
+[https]
+accept = 0.0.0.0:44125
+connect = 127.0.0.1:44126
+cert = @DEST@/certs/cert.pem
+key = @DEST@/certs/key.pem
+sslVersionMin = SSLv3
+sslVersionMax = SSLv3
+ciphers = ALL:COMPLEMENTOFALL:@SECLEVEL=0
+securityLevel = 0
+options = -NO_SSLv3
+verifyChain = no
