@@ -8,7 +8,11 @@ three-player sessions with full speedlists on it.
 
 Made by **sn0wd0wn**: gregel, Dantiox and Alexes.
 
-![Three players in free roam](docs/screenshots/freeroam.jpg)
+[![Video: three players, free roam and a speedlist](https://img.youtube.com/vi/gprfBzVMjnw/maxresdefault.jpg)](https://www.youtube.com/watch?v=gprfBzVMjnw)
+
+▶ **[Watch the gameplay video](https://www.youtube.com/watch?v=gprfBzVMjnw)**: three players online, free roam and a speedlist on this server.
+
+![Speedlist meet-up with the live score of three players](docs/screenshots/speedlist.jpg)
 
 ## What works
 
@@ -19,7 +23,8 @@ Made by **sn0wd0wn**: gregel, Dantiox and Alexes.
 | Speedlists: five events picked at random, voting | Works |
 | License plates (saved on the server) | Works |
 | Player names (chosen by each player) | Works |
-| Online level, free roam score, speedlist results | Not yet: the server does not send `ResultNotification` |
+| Live speedlist score during the events | Works |
+| Online level, free roam SP counter, end-of-speedlist results | Not yet: the server does not send `ResultNotification` |
 | Host migration | The new host does not restart the speedlist |
 | Friends, Autolog recommendations, speedwall records | Placeholder answers only |
 
@@ -119,7 +124,7 @@ Names are 1–15 Latin letters, digits, `_` or `-`.
 | `client/hosts.txt` | Names to redirect |
 | `client/trace_hook/` | Optional `d3d11.dll` proxy that logs the game's network code, by Dantiox |
 | `docs/` | How the protocol work was done, what is still open |
-| `logs/` | A real server log of a three-player speedlist session |
+| `logs/` | Real server logs of three-player sessions (3 and 4 November 2026) |
 
 ## Not included
 
