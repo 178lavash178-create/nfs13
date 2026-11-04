@@ -1,3 +1,6 @@
+// Copyright (C) 2026 Dantiox and sn0wd0wn (gregel, Dantiox, Alexes)
+// SPDX-License-Identifier: AGPL-3.0-only
+
 #ifndef HOOK_ENGINE_H
 #define HOOK_ENGINE_H
 

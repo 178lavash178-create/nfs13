@@ -1,3 +1,5 @@
+# Copyright (C) 2026 sn0wd0wn (gregel, Dantiox, Alexes)
+# SPDX-License-Identifier: AGPL-3.0-only
 FROM alpine:3.20
 RUN apk add --no-cache build-base perl linux-headers curl
 WORKDIR /src

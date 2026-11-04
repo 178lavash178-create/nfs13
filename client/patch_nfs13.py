@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (C) 2026 sn0wd0wn (gregel, Dantiox, Alexes)
+# SPDX-License-Identifier: AGPL-3.0-only
 """Patch your own copy of NFS13.exe so it can log in to an nfs13 server.
 
 The patch is a list of byte replacements. It only applies to the exact

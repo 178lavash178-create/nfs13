@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="0.55" stop-color="#0b1424"/>
+      <stop offset="1" stop-color="#1a0a10"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8f4ff"/>
+      <stop offset="0.5" stop-color="#9fd8ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff2a3d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ff2a3d" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="streakBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5cc8ff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5cc8ff" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#3fa9ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <g id="flake" stroke="#cfe9ff" stroke-width="2" stroke-linecap="round" fill="none">
+      <line x1="0" y1="-10" x2="0" y2="10"/>
+      <line x1="-8.7" y1="-5" x2="8.7" y2="5"/>
+      <line x1="-8.7" y1="5" x2="8.7" y2="-5"/>
+      <path d="M-3,-7 L0,-10 L3,-7 M-3,7 L0,10 L3,7"/>
+    </g>
+  </defs>
+
+  <rect width="1280" height="360" fill="url(#sky)"/>
+  <ellipse cx="640" cy="190" rx="560" ry="150" fill="url(#glow)"/>
+
+  <!-- city skyline -->
+  <g fill="#070b14" opacity="0.9">
+    <rect x="0" y="250" width="70" height="110"/><rect x="60" y="215" width="55" height="145"/>
+    <rect x="120" y="265" width="80" height="95"/><rect x="195" y="230" width="40" height="130"/>
+    <rect x="240" y="275" width="90" height="85"/><rect x="960" y="240" width="60" height="120"/>
+    <rect x="1015" y="205" width="45" height="155"/><rect x="1060" y="260" width="85" height="100"/>
+    <rect x="1140" y="225" width="55" height="135"/><rect x="1190" y="270" width="90" height="90"/>
+  </g>
+  <g fill="#ffd27a" opacity="0.35">
+    <rect x="72" y="230" width="6" height="6"/><rect x="88" y="250" width="6" height="6"/>
+    <rect x="203" y="245" width="6" height="6"/><rect x="1025" y="220" width="6" height="6"/>
+    <rect x="1040" y="250" width="6" height="6"/><rect x="1152" y="240" width="6" height="6"/>
+  </g>
+
+  <!-- road and speed streaks -->
+  <path d="M0,330 L1280,300 L1280,360 L0,360 Z" fill="#04060b"/>
+  <g filter="url(#soft)">
+    <rect x="80" y="292" width="520" height="5" rx="2" fill="url(#streak)"/>
+    <rect x="680" y="316" width="560" height="4" rx="2" fill="url(#streakBlue)"/>
+  </g>
+  <rect x="80" y="293" width="520" height="2" rx="1" fill="url(#streak)"/>
+  <rect x="180" y="306" width="380" height="2" rx="1" fill="url(#streak)" opacity="0.6"/>
+  <rect x="680" y="317" width="560" height="2" rx="1" fill="url(#streakBlue)"/>
+  <rect x="820" y="328" width="360" height="1.5" rx="1" fill="url(#streakBlue)" opacity="0.6"/>
+
+  <!-- snow -->
+  <g opacity="0.85">
+    <use href="#flake" transform="translate(110,70) scale(1.1)"/>
+    <use href="#flake" transform="translate(300,40) scale(0.6)"/>
+    <use href="#flake" transform="translate(420,110) scale(0.8)"/>
+    <use href="#flake" transform="translate(880,55) scale(0.7)"/>
+    <use href="#flake" transform="translate(1010,120) scale(1.2)"/>
+    <use href="#flake" transform="translate(1180,60) scale(0.9)"/>
+    <use href="#flake" transform="translate(1230,170) scale(0.5)"/>
+    <use href="#flake" transform="translate(40,180) scale(0.55)"/>
+  </g>
+  <g fill="#e6f3ff">
+    <circle cx="200" cy="140" r="2"/><circle cx="350" cy="190" r="1.5"/><circle cx="520" cy="60" r="2"/>
+    <circle cx="760" cy="40" r="1.5"/><circle cx="820" cy="150" r="2"/><circle cx="940" cy="200" r="1.5"/>
+    <circle cx="1110" cy="30" r="2"/><circle cx="1240" cy="110" r="1.5"/><circle cx="60" cy="40" r="1.5"/>
+    <circle cx="640" cy="28" r="1.5"/><circle cx="470" cy="230" r="1.2"/><circle cx="1080" cy="190" r="1.2"/>
+  </g>
+
+  <!-- title -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" text-anchor="middle">
+    <text x="640" y="196" font-size="132" font-weight="900" font-style="italic" letter-spacing="6"
+          fill="#3fa9ff" opacity="0.45" filter="url(#soft)">sn0wd0wn</text>
+    <text x="640" y="196" font-size="132" font-weight="900" font-style="italic" letter-spacing="6"
+          fill="url(#title)">sn0wd0wn</text>
+    <rect x="430" y="218" width="420" height="3" fill="#ff2a3d"/>
+    <text x="640" y="258" font-size="26" font-weight="700" letter-spacing="8" fill="#ffffff">
+      NFS MOST WANTED 2012 · ONLINE REVIVED
+    </text>
+    <text x="640" y="288" font-size="17" letter-spacing="5" fill="#8fb3d1">
+      gregel · Dantiox · Alexes
+    </text>
+  </g>
+</svg>

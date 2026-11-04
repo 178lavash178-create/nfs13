@@ -1,3 +1,5 @@
+# Copyright (C) 2026 sn0wd0wn (gregel, Dantiox, Alexes)
+# SPDX-License-Identifier: AGPL-3.0-only
 import asyncio
 import json
 import tempfile

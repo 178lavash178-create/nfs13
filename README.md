@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.svg" alt="sn0wd0wn: NFS Most Wanted 2012 online revived" width="100%">
+</p>
+
 # nfs13
 
 Self-hosted online server for **Need for Speed: Most Wanted (2012)** on PC.
@@ -6,7 +10,7 @@ It brings back the game's online mode for you and your friends: logging in,
 EasyDrive, free roam with other players, speedlists and Autolog. We have played
 three-player sessions with full speedlists on it.
 
-Made by **sn0wd0wn**: gregel, Dantiox and Alexes.
+Made by **sn0wd0wn**: gregel, Dantiox and Alexes (see [AUTHORS](AUTHORS)).
 
 [![Video: three players, free roam and a speedlist](https://img.youtube.com/vi/gprfBzVMjnw/hqdefault.jpg)](https://www.youtube.com/watch?v=gprfBzVMjnw)
 
@@ -137,3 +141,5 @@ This is an unofficial fan project for preservation and private play. It is not
 affiliated with or endorsed by Electronic Arts or Criterion Games. *Need for
 Speed* and *Most Wanted* are trademarks of Electronic Arts Inc.
 Our own code is licensed under the [GNU Affero General Public License v3.0](LICENSE).
+
+Copyright (C) 2026 sn0wd0wn (gregel, Dantiox, Alexes).

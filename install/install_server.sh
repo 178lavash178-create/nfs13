@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Copyright (C) 2026 sn0wd0wn (gregel, Dantiox, Alexes)
+# SPDX-License-Identifier: AGPL-3.0-only
 # Install the nfs13 server for the current user on a Linux host.
 #
 #   ./install/install_server.sh 192.168.1.50
