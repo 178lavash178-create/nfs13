@@ -8,7 +8,7 @@ three-player sessions with full speedlists on it.
 
 Made by **sn0wd0wn**: gregel, Dantiox and Alexes.
 
-[![Video: three players, free roam and a speedlist](https://img.youtube.com/vi/gprfBzVMjnw/maxresdefault.jpg)](https://www.youtube.com/watch?v=gprfBzVMjnw)
+[![Video: three players, free roam and a speedlist](https://img.youtube.com/vi/gprfBzVMjnw/hqdefault.jpg)](https://www.youtube.com/watch?v=gprfBzVMjnw)
 
 ▶ **[Watch the gameplay video](https://www.youtube.com/watch?v=gprfBzVMjnw)**: three players online, free roam and a speedlist on this server.
 
