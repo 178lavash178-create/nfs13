@@ -4,6 +4,11 @@
 
 # nfs13
 
+> [!IMPORTANT]
+> ## LEGAL COPY OF THE GAME REQUIRED
+> **Use this project ONLY with a legally acquired copy of Need for Speed: Most Wanted (2012).**
+> This project does not provide, distribute, or authorize pirated copies of the game. You must supply your own legitimate game installation. The server and client patcher are intended solely for interoperability with your own copy.
+
 Self-hosted online server for **Need for Speed: Most Wanted (2012)** on PC.
 
 It brings back the game's online mode for you and your friends: logging in,
