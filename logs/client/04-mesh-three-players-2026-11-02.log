@@ -1,0 +1,71 @@
+# Peer-to-peer mesh between three players: setup, connect, AddClient
+# Excerpt of nfs13_trace.log written by client/trace_hook on the host PC.
+# Only hook lines are kept; repeated lines are collapsed as (xN); IPs replaced with 10.13.x.x.
+
+[+] Hooked NotifyGameSetup at 0x00BBF3C0
+[+] Hooked StartNetworkMesh at 0x00BC8630
+[+] Hooked IsConnectedOrReady at 0x00A82E60
+[+] Hooked ProtoSslProcessServerCertificate at 0x00B91E70
+[+] Hooked BeginMesh at 0x00BBDF90
+[+] Hooked MeshCreated at 0x00BC5A90
+[+] Hooked AfterMeshCreated at 0x00BBB750
+[+] Hooked ConnectLocal at 0x00BB8E80
+[+] Hooked FlushDeferred at 0x00BB65F0
+[+] Hooked ConnectPlayer at 0x00BB64D0
+[+] Hooked DeferPlayer at 0x00BB3820
+[+] Hooked AdapterInit at 0x00C0FA50
+[+] Hooked AdapterConnect at 0x00C0E4F0
+[+] Hooked NetworkAddPeer at 0x00C0E1B0
+[+] Hooked ConnApiAddClient at 0x00B84430
+[ONLINE_STATUS] NetManager_IsConnectedOrReady state changed -> OFFLINE / NOT READY
+[ONLINE_STATUS] NetManager_IsConnectedOrReady state changed -> ONLINE / READY [OK]
+[START_NETWORK_MESH] >>> TRIGGERED at 0x00BC8630!
+[NOTIFY_GAME_SETUP] >>> TRIGGERED at 0x00BBF3C0!
+    GameID (GID)       : 1 (0x00000001)
+    TopologyHost (THST): 1 (0x00000001) [+] THST PRESENT!
+[NOTIFY_GAME_SETUP] <<< Returned cleanly.
+[MESH] BeginMesh 0x00BBDF90 api=15EF5210
+[ADAPTER] InitNetworkMesh 0x00C0FA50 mesh=15EF56A0 a2=00000002 a3=00000001
+[MESH] MeshCreated 0x00BC5A90 error=0
+[MESH] AfterMeshCreated 0x00BBB750 error=0 gid=1
+[MESH] ConnectLocal 0x00BB8E80
+[MESH] ConnectPlayer 0x00BB64D0
+[ADAPTER] Connect 0x00C0E4F0 a1=00000000 endpoint=15F1AC80
+[ADAPTER] AddPeer 0x00C0E1B0 network=15F15780 connapi=15F17F78 pending=0
+[ADAPTER] Connect returned
+[MESH] FlushDeferred 0x00BB65F0 count=0
+[MESH] AfterMeshCreated returned
+[MESH] MeshCreated returned
+[ADAPTER] InitNetworkMesh returned
+[MESH] BeginMesh returned, flags2d1=0 flags2d4=0
+[START_NETWORK_MESH] <<< Returned status: 0 (0x00000000)
+[START_NETWORK_MESH] >>> TRIGGERED at 0x00BC8630!
+[NOTIFY_GAME_SETUP] >>> TRIGGERED at 0x00BBF3C0!
+    GameID (GID)       : 1 (0x00000001)
+    TopologyHost (THST): 130 (0x00000082) [+] THST PRESENT!
+[NOTIFY_GAME_SETUP] <<< Returned cleanly.
+[MESH] BeginMesh 0x00BBDF90 api=15EF5210
+[ADAPTER] InitNetworkMesh 0x00C0FA50 mesh=15EF56A0 a2=00000002 a3=00000001
+[MESH] MeshCreated 0x00BC5A90 error=0
+[MESH] AfterMeshCreated 0x00BBB750 error=0 gid=1
+[MESH] ConnectLocal 0x00BB8E80
+[MESH] ConnectPlayer 0x00BB64D0
+[MESH] DeferPlayer 0x00BB3820 map=15EF57A8 entryId=1000001
+[MESH] FlushDeferred 0x00BB65F0 count=1
+[MESH] ConnectPlayer 0x00BB64D0
+[MESH] DeferPlayer 0x00BB3820 map=15EF57A8 entryId=1000001
+[MESH] AfterMeshCreated returned
+[MESH] MeshCreated returned
+[ADAPTER] InitNetworkMesh returned
+[MESH] BeginMesh returned, flags2d1=0 flags2d4=0
+[START_NETWORK_MESH] <<< Returned status: 0 (0x00000000)
+[MESH] ConnectPlayer 0x00BB64D0
+[ADAPTER] Connect 0x00C0E4F0 a1=00000000 endpoint=15F1AC80
+[ADAPTER] AddPeer 0x00C0E1B0 network=15F15780 connapi=15F17F78 pending=0
+[ADAPTER] Connect returned
+[MESH] ConnectPlayer 0x00BB64D0
+[ADAPTER] Connect 0x00C0E4F0 a1=00000000 endpoint=15F1AD38
+[ADAPTER] AddPeer 0x00C0E1B0 network=15F15780 connapi=15F17F78 pending=0
+[CONNAPI] AddClient 0x00B84430 connapi=15F17F78 client=001AE9C8 index=2
+[CONNAPI] AddClient returned 0
+[ADAPTER] Connect returned

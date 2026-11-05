@@ -1,0 +1,25 @@
+# Speedlist with wrong event ids: parser keeps 0 events, host leaves
+# Excerpt of nfs13_trace.log written by client/trace_hook on the host PC.
+# Only hook lines are kept; repeated lines are collapsed as (xN); IPs replaced with 10.13.x.x.
+
+[+] Hooked NotifyGameSetup at 0x00BBF3C0
+[+] Hooked StartNetworkMesh at 0x00BC8630
+[+] Hooked IsConnectedOrReady at 0x00A82E60
+[+] Hooked ProtoSslProcessServerCertificate at 0x00B91E70
+[+] Hooked ParsePlaylist at 0x006EB0D0
+[+] Hooked ValidatePlaylist at 0x006EA460
+[+] Hooked AutologLost at 0x006E7410
+[+] Hooked BeginMesh at 0x00BBDF90
+[+] Hooked MeshCreated at 0x00BC5A90
+[+] Hooked AfterMeshCreated at 0x00BBB750
+[+] Hooked ConnectLocal at 0x00BB8E80
+[+] Hooked FlushDeferred at 0x00BB65F0
+[+] Hooked ConnectPlayer at 0x00BB64D0
+[+] Hooked DeferPlayer at 0x00BB3820
+[+] Hooked AdapterInit at 0x00C0FA50
+[+] Hooked AdapterConnect at 0x00C0E4F0
+[+] Hooked NetworkAddPeer at 0x00C0E1B0
+[+] Hooked ConnApiAddClient at 0x00B84430
+[PLAYLIST] Validate 0x006EA460 result=0 count=0 first=0    (x9917)
+[PLAYLIST] Parse 0x006EB0D0 result=0 active=0
+[PLAYLIST] Validate 0x006EA460 result=0 count=0 first=0    (x5)

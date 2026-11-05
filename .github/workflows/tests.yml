@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Server tests
+        working-directory: server
+        run: python -m unittest -v test_server
+      - name: Installer syntax
+        run: bash -n install/install_server.sh
+      - name: Patch file is consistent
+        run: |
+          python - <<'PY'
+          import json
+          p = json.load(open("client/patches/nfs13_online.json"))
+          total = sum(len(x["patched"]) // 2 for x in p["patches"])
+          assert all(len(x["original"]) == len(x["patched"]) for x in p["patches"])
+          print(len(p["patches"]), "ranges,", total, "bytes")
+          PY
+      - name: Session summary runs on the shipped log
+        run: python tools/session_summary.py logs/server-events-2026-11-01_05.log | tail -1

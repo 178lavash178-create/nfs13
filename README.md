@@ -4,6 +4,8 @@
 
 # nfs13
 
+[![tests](https://github.com/178lavash178-create/nfs13/actions/workflows/tests.yml/badge.svg)](https://github.com/178lavash178-create/nfs13/actions/workflows/tests.yml)
+
 > [!IMPORTANT]
 > ## LEGAL COPY OF THE GAME REQUIRED
 > **Use this project ONLY with a legally acquired copy of Need for Speed: Most Wanted (2012).**
@@ -21,7 +23,17 @@ Made by **sn0wd0wn**: gregel, Dantiox and Alexes (see [AUTHORS](AUTHORS)).
 
 ▶ **[Watch the gameplay video](https://www.youtube.com/watch?v=gprfBzVMjnw)**: three players online, free roam and a speedlist on this server.
 
-![Speedlist meet-up with the live score of three players](docs/screenshots/speedlist.jpg)
+| | |
+| --- | --- |
+| ![Free roam during the speedlist break](docs/screenshots/freeroam-intermission.jpg) | ![Meet-up with the live speedlist score](docs/screenshots/speedlist.jpg) |
+| ![Takedown on the way to a meet-up](docs/screenshots/meetup-takedown.jpg) | ![Wrecked card with another player's plate](docs/screenshots/wrecked-card.jpg) |
+
+### Proof
+
+44 sessions, 14 of them with three players, 15 hours of multiplayer time,
+19 speedlist events and 685 game reports between 1 and 5 November 2026.
+Full server and client logs, a table of every session and decoded game
+reports: **[docs/EVIDENCE.md](docs/EVIDENCE.md)**.
 
 ## What works
 
@@ -29,7 +41,7 @@ Made by **sn0wd0wn**: gregel, Dantiox and Alexes (see [AUTHORS](AUTHORS)).
 | --- | --- |
 | Online login, EasyDrive, online menus | Works |
 | Free roam with up to 12 players (tested with 3) | Works |
-| Speedlists: five events picked at random, voting | Works |
+| Speedlists: five events picked at random each time | Works |
 | License plates (saved on the server) | Works |
 | Player names (chosen by each player) | Works |
 | Live speedlist score during the events | Works |
@@ -132,8 +144,9 @@ Names are 1–15 Latin letters, digits, `_` or `-`.
 | `client/patch_nfs13.py`, `client/patches/` | Client patcher and the patch bytes |
 | `client/hosts.txt` | Names to redirect |
 | `client/trace_hook/` | Optional `d3d11.dll` proxy that logs the game's network code, by Dantiox |
-| `docs/` | How the protocol work was done, what is still open |
-| `logs/` | Real server logs of three-player sessions (3 and 4 November 2026) |
+| `docs/` | How it works, evidence, every session, decoded game reports |
+| `tools/` | Log tools: TDF decoder, session summary, log sanitizer |
+| `logs/` | Real server logs and client hook logs, 1–5 November 2026 |
 
 ## Not included
 
