@@ -11,6 +11,16 @@
 > **Use this project ONLY with a legally acquired copy of Need for Speed: Most Wanted (2012).**
 > This project does not provide, distribute, or authorize pirated copies of the game. You must supply your own legitimate game installation. The server and client patcher are intended solely for interoperability with your own copy.
 
+> [!NOTE]
+> ## No public servers. Self-hosting only.
+> **sn0wd0wn does not run, host or provide any public game servers, and does not offer accounts or online services.**
+> This repository contains software that you install and run yourself, on your own machine, for you and people you know. Any server you find online is not operated or endorsed by us.
+
+> [!WARNING]
+> ## Not affiliated with EA
+> **This project is not affiliated with, authorized, sponsored or endorsed by Electronic Arts Inc. or Criterion Games.**
+> It is not an official EA service and has no connection to EA's servers or accounts. *Need for Speed* and *Most Wanted* are trademarks of Electronic Arts Inc., used here only to name the game this project works with.
+
 Self-hosted online server for **Need for Speed: Most Wanted (2012)** on PC.
 
 It brings back the game's online mode for you and your friends: logging in,
@@ -163,7 +173,7 @@ Memory dumps of the game are not published either: they contain the game's code.
 
 ## Legal
 
-This is an independent, unofficial, non-commercial fan preservation and interoperability project. It is **not affiliated with, authorized by, sponsored by, or endorsed by Electronic Arts or Criterion Games**. *Need for Speed* and *Most Wanted* are trademarks of Electronic Arts Inc.
+This is an independent, unofficial, non-commercial fan preservation and interoperability project for self-hosting. The sn0wd0wn team does not operate public game servers or provide online services of any kind. It is **not affiliated with, authorized by, sponsored by, or endorsed by Electronic Arts or Criterion Games**. *Need for Speed* and *Most Wanted* are trademarks of Electronic Arts Inc.
 
 **You must obtain and use your own lawfully acquired copy of Need for Speed: Most Wanted (2012).** No game executable, proprietary game assets, or EA source code are distributed in this repository. The client patcher only operates on a user's existing executable.
 
