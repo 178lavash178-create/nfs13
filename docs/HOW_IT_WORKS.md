@@ -48,7 +48,7 @@ sequenceDiagram
     B-->>G: serverList = NFS13_HOST:42127
     G->>B: preAuth, fetchClientConfig
     B-->>G: Autolog URLs, game settings
-    G->>B: silentLogin (patched path, no Origin)
+    G->>B: silentLogin (patched login path)
     B-->>G: session key, persona (name, id from players.json)
     B-->>G: UserAdded, UserUpdated notifications
     G->>AL: GET / , POST session
@@ -58,9 +58,11 @@ sequenceDiagram
     Note over G: EasyDrive and online menus open
 ```
 
-The original game logs in through Origin. The client patch sends the login
-down the game's own Blaze `silentLogin` path instead, so no Origin login is
-involved, and accepts the Autolog session that results.
+The retail game starts its online login through the official login flow,
+which pointed at EA's own services. The client patch sends the login down the
+game's own Blaze `silentLogin` path instead, so it can log in to the private
+server you run, and accepts the Autolog session that results. It does not
+touch how the game itself is installed, licensed or started.
 
 ## Joining a session
 
@@ -135,7 +137,7 @@ They do the following:
 
 | Change | Why |
 | --- | --- |
-| Route the Origin login state to Blaze `silentLogin`; restore the `logout` RPC | No Origin account is needed to go online |
+| Route the login state to the game's own Blaze `silentLogin`; restore the `logout` RPC | Lets the game log in to a private server instead of the retired official login flow |
 | Accept the Autolog session state 10 as well as 11 | After the local login cycle the session ends in state 10 and was rejected |
 | Small code cave at the end of `.text`, section marked writable | Keeps the Autolog session alive across logins |
 | Skip the server certificate check in DirtySock's ProtoSSL | Lets the game use a self-signed certificate |

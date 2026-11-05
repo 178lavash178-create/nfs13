@@ -19,7 +19,8 @@
 > [!WARNING]
 > ## Not affiliated with EA
 > **This project is not affiliated with, authorized, sponsored or endorsed by Electronic Arts Inc. or Criterion Games.**
-> It is not an official EA service and has no connection to EA's servers or accounts. *Need for Speed* and *Most Wanted* are trademarks of Electronic Arts Inc., used here only to name the game this project works with.
+> It is not an official EA service and has no connection to EA's servers or accounts. Full terms: [DISCLAIMER.md](DISCLAIMER.md).
+> *Need for Speed* and *Most Wanted* are trademarks of Electronic Arts Inc., used here only to name the game this project works with.
 
 Self-hosted online server for **Need for Speed: Most Wanted (2012)** on PC.
 
@@ -111,7 +112,7 @@ together with stunnel using `server/frontend/stunnel.conf.in`.
    It never changes the original file.
 
    ```bash
-   python client/patch_nfs13.py "D:\Games\Need for Speed Most Wanted\NFS13.exe"
+   python client/patch_nfs13.py --i-own-this-game "D:\Games\Need for Speed Most Wanted\NFS13.exe"
    ```
 
    Supported `NFS13.exe`: size 13 672 448 bytes,
@@ -179,6 +180,10 @@ This is an independent, unofficial, non-commercial fan preservation and interope
 
 Reverse engineering, modifying executables, and bypassing authentication or technical protection mechanisms may be restricted by copyright law, anti-circumvention rules, and the game's terms of service. Laws vary by jurisdiction. This project makes **no claim that every use is legally permitted**; users are responsible for checking applicable law and agreements. This notice does not grant any rights to EA's intellectual property.
 
-Our original project code is licensed under the [GNU Affero General Public License v3.0](LICENSE).
+Our original project code is licensed under the [GNU Affero General Public License v3.0](LICENSE)
+and comes **without any warranty**. The full terms of use are in
+**[DISCLAIMER.md](DISCLAIMER.md)**: please read them before using the project.
+Security notes: [SECURITY.md](SECURITY.md). Contributing rules:
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 Copyright (C) 2026 sn0wd0wn (gregel, Dantiox, Alexes).

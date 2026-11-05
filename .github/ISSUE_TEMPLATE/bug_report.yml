@@ -1,0 +1,31 @@
+name: Bug report
+description: Something does not work with your own self-hosted server
+body:
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you post
+      options:
+        - label: I use a lawfully acquired copy of Need for Speed Most Wanted (2012).
+          required: true
+        - label: I am not asking for game files, executables, cracks or access to a server.
+          required: true
+        - label: I removed IP addresses and tokens from logs (tools/sanitize_log.py).
+          required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server log (sanitized)
+      render: text
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: Server OS and Python version; game on Windows or Linux/Proton.

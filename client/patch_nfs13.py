@@ -7,7 +7,9 @@ The patch is a list of byte replacements. It only applies to the exact
 executable it was made from (checked by SHA-256), writes a new file next to
 the original and never modifies NFS13.exe itself.
 
-    python patch_nfs13.py "C:\\Games\\Need for Speed Most Wanted\\NFS13.exe"
+    python patch_nfs13.py --i-own-this-game "C:\\Games\\Need for Speed Most Wanted\\NFS13.exe"
+
+Use it only on a copy of the game you acquired lawfully. See DISCLAIMER.md.
 """
 
 import argparse
@@ -26,7 +28,15 @@ def main() -> int:
                         help="output file (default: NFS13.online.exe next to the input)")
     parser.add_argument("--patch", type=Path, default=PATCH_FILE,
                         help="patch description (default: %(default)s)")
+    parser.add_argument("--i-own-this-game", action="store_true",
+                        help="confirm that this copy of the game was acquired lawfully")
     args = parser.parse_args()
+
+    if not args.i_own_this_game:
+        print("This patcher may only be used on a lawfully acquired copy of\n"
+              "Need for Speed: Most Wanted (2012). Read DISCLAIMER.md, then run it\n"
+              "again with --i-own-this-game to confirm.", file=sys.stderr)
+        return 2
 
     patch = json.loads(args.patch.read_text(encoding="utf-8"))
     data = bytearray(args.exe.read_bytes())

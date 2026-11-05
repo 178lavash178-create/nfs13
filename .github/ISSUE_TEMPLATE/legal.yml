@@ -1,0 +1,14 @@
+name: Rights holder notice
+description: Report material you believe should not be in this repository
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What and where
+      description: The file(s) or content concerned and why. We review every notice promptly and in good faith.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: How to reach you (optional)
