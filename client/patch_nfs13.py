@@ -19,6 +19,10 @@ import sys
 from pathlib import Path
 
 PATCH_FILE = Path(__file__).with_name("patches") / "nfs13_online.json"
+EA_APP_BUILD = (
+    13684056,
+    "3af4dc5f206d3b41d2dcf46ef8ef41575e56834ae73de826708a2a44c44fe971",
+)
 
 
 def main() -> int:
@@ -45,6 +49,12 @@ def main() -> int:
     if digest == patch["patched_sha256"]:
         print("This file is already patched.")
         return 0
+    if (len(data), digest) == EA_APP_BUILD:
+        print("EA App executable recognized, but this build has no compatible patch yet.",
+              file=sys.stderr)
+        print("Its binary layout differs from the supported build; a matching patch "
+              "and patched-file SHA-256 are required.", file=sys.stderr)
+        return 1
     if len(data) != patch["size"] or digest != patch["base_sha256"]:
         print(f"Unsupported executable: size={len(data)} sha256={digest}", file=sys.stderr)
         print(f"Expected sha256={patch['base_sha256']}", file=sys.stderr)
