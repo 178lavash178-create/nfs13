@@ -39,9 +39,11 @@ This repository does **not** contain and will never distribute:
   run the game without a valid licence.
 
 The client patcher contains only the small set of byte changes needed for
-compatibility, checks that it is applied to one specific executable, and
-writes a separate file, leaving the user's original file untouched. It
-cannot produce a working game for anyone who does not already have it.
+compatibility, verifies that it is applied to a lawfully installed copy of the
+game (checking EA/Steam installation manifests, activation components and
+Electronic Arts Authenticode signatures), and writes a separate file, leaving
+the user's original file untouched. It cannot produce a working game for anyone
+who does not already have it.
 
 Requests for game files, cracks or pirated copies will be closed and are not
 welcome in this project.

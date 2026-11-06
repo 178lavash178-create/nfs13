@@ -26,5 +26,8 @@ jobs:
           assert all(len(x["original"]) == len(x["patched"]) for x in p["patches"])
           print(len(p["patches"]), "ranges,", total, "bytes")
           PY
+      - name: Client license verification and patcher syntax
+        run: |
+          python -m py_compile client/patch_nfs13.py
       - name: Session summary runs on the shipped log
         run: python tools/session_summary.py logs/server-events-2026-11-01_05.log | tail -1

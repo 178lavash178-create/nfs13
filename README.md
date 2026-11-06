@@ -107,16 +107,13 @@ together with stunnel using `server/frontend/stunnel.conf.in`.
 
 ## Client setup (Windows or Linux with Proton)
 
-1. **Patch your own copy of the game.** The patcher works only on the exact
-   `NFS13.exe` we built it from and writes `NFS13.online.exe` next to it.
-   It never changes the original file.
+1. **Patch your own copy of the game.** The patcher verifies your game installation's license and authenticity manifests (`__Installer/installerdata.xml`, `Core/Activation.dll` and Electronic Arts Authenticode signatures, or Steam manifest), validates the executable's PE structure and byte patterns, and writes `NFS13.online.exe` next to it. It never changes the original file.
 
    ```bash
-   python client/patch_nfs13.py --i-own-this-game "D:\Games\Need for Speed Most Wanted\NFS13.exe"
+   python client/patch_nfs13.py --i-own-this-game "C:\Program Files\EA Games\Need for Speed(TM) Most Wanted\NFS13.exe"
    ```
 
-   Supported `NFS13.exe`: size 13 672 448 bytes,
-   SHA-256 `9571280bb8868cd254e95442181d7bf1d6eafb2156a95d0c38337c7470762c0f`.
+   Supports both EA App / Origin builds (`13 684 056` bytes, OOA-wrapped) and unwrapped retail/Steam builds (`13 672 448` bytes).
 
 2. **Point the EA names at your server.** Add one line per name from
    [client/hosts.txt](client/hosts.txt) to your hosts file
