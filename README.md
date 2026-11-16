@@ -5,6 +5,7 @@
 # nfs13
 
 [![tests](https://github.com/178lavash178-create/nfs13/actions/workflows/tests.yml/badge.svg)](https://github.com/178lavash178-create/nfs13/actions/workflows/tests.yml)
+[![Matrix Chat](https://img.shields.io/badge/Matrix-Join%20Chat-0DBD8B?style=flat-square&logo=matrix&logoColor=white)](https://matrix.to/#/!utQkdwsqZjmvfRBrlR7ijxukirWXsAQejfAp5DKGeaY?via=matrix.org)
 
 > [!IMPORTANT]
 > ## LEGAL COPY OF THE GAME REQUIRED
@@ -160,6 +161,17 @@ Names are 1–15 Latin letters, digits, `_` or `-`.
 
 No game files. You need your own copy of Need for Speed: Most Wanted (2012).
 Memory dumps of the game are not published either: they contain the game's code.
+
+## Community & Discussion
+
+We have an open Matrix chat where you can follow the reverse engineering and server development progress, find players for test sessions, or discuss architecture:
+
+[![Matrix Chat](https://img.shields.io/badge/Matrix-Join%20Chat-0DBD8B?style=for-the-badge&logo=matrix&logoColor=white)](https://matrix.to/#/!utQkdwsqZjmvfRBrlR7ijxukirWXsAQejfAp5DKGeaY?via=matrix.org)
+
+* **Matrix Room:** [Join the chat](https://matrix.to/#/!utQkdwsqZjmvfRBrlR7ijxukirWXsAQejfAp5DKGeaY?via=matrix.org) (`!utQkdwsqZjmvfRBrlR7ijxukirWXsAQejfAp5DKGeaY?via=matrix.org`)
+* Follow live protocol reversing and updates for *Need for Speed: Most Wanted (2012)*.
+* Participate in multiplayer test sessions and bug reporting.
+* Discuss server architecture, packet formats, and game patches.
 
 ## Security and compatibility warnings
 
